@@ -1,4 +1,5 @@
 import LostAndRecoveredCard from "components/LostAndRecoveredCard";
+import Title from "components/Title";
 import React from "react";
 
 function LostAndRecovered() {
@@ -6,9 +7,9 @@ function LostAndRecovered() {
     <div>
       <div className="container">
         <div className="mb-50px">
-          <h1 className="text-center font-bold text-5xl mb-8">
-            LOST & RECOVERED
-          </h1>
+          <div className="mb-8">
+            <Title title="LOST & RECOVERED" />
+          </div>
           <p className="text-center text-base font-light">
             Get a free evaluation of your recovery chances by using our wizard
           </p>

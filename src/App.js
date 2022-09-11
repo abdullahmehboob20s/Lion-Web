@@ -2,6 +2,8 @@ import Hero from "layouts/Hero";
 import Navbar from "layouts/Navbar";
 import TrustedCompanies from "layouts/TrustedCompanies";
 import LostAndRecovered from "layouts/LostAndRecovered";
+import GettingStarted from "layouts/GettingStarted";
+import ServicesIncludes from "layouts/ServicesIncludes";
 
 function App() {
   return (
@@ -13,8 +15,14 @@ function App() {
       <div className="mb-150px">
         <TrustedCompanies />
       </div>
-      <div className="mb-150px">
+      <div className="mb-100px">
         <LostAndRecovered />
+      </div>
+      <div className="mb-100px">
+        <GettingStarted />
+      </div>
+      <div className="mb-100px">
+        <ServicesIncludes />
       </div>
     </div>
   );
