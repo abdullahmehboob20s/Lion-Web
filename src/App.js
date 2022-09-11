@@ -1,6 +1,6 @@
-import React from "react";
 import Hero from "./layouts/Hero";
 import Navbar from "./layouts/Navbar";
+import TrustedCompanies from "./layouts/TrustedCompanies";
 
 function App() {
   return (
@@ -8,6 +8,9 @@ function App() {
       <div className="bg-blue mb-100px">
         <Navbar />
         <Hero />
+      </div>
+      <div className="mb-150px">
+        <TrustedCompanies />
       </div>
     </div>
   );
