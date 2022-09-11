@@ -1,14 +1,6 @@
+import Point from "components/Point";
 import Title from "components/Title";
 import React from "react";
-
-const Point = ({ point }) => {
-  return (
-    <div className="flex items-start space-x-4">
-      <img src="images/checkbox-icon.svg" className="mt-[.36em]" alt="" />
-      <p className="text-xl font-medium text-black">{point}</p>
-    </div>
-  );
-};
 
 function ServicesIncludes() {
   return (
