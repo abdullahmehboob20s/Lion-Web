@@ -14,50 +14,58 @@ function Footer() {
         className="-z-50 w-full mb-[-13%]"
         alt=""
       />
-      <div className="pt-0 py-100px bg-blue relative">
+      <div className="mt-25px md:pt-0 pb-50px md:py-100px bg-blue relative">
         <div className="container">
-          <div className="mb-150px">
-            <div className="mb-100px">
+          <div className="mb-50px sm:mb-100px xl:mb-150px">
+            <div className="mb-50px sm:mb-75px xl:mb-100px">
               <Form />
             </div>
 
-            <div className="mb-50px">
+            <div className="mb-25px xl:mb-50px">
               <Title title="contact us" className="text-white" />
             </div>
 
-            <div className="flex items-center space-x-10 justify-center">
+            <div className="flex items-center space-x-4 lg:space-x-6 xl:space-x-10 justify-center">
               <SocialIcon
                 href="/"
-                Icon={() => <FaFacebook className="text-2xl text-blue" />}
+                Icon={() => (
+                  <FaFacebook className="text-base lg:text-xl xl:text-2xl text-blue" />
+                )}
               />
               <SocialIcon
                 href="/"
-                Icon={() => <FaTwitter className="text-xl text-blue" />}
+                Icon={() => <FaTwitter className="text-20px text-blue" />}
               />
               <SocialIcon
                 href="/"
-                Icon={() => <FaLinkedinIn className="text-2xl text-blue" />}
+                Icon={() => (
+                  <FaLinkedinIn className="text-base lg:text-xl xl:text-2xl text-blue" />
+                )}
               />
               <SocialIcon
                 href="/"
-                Icon={() => <FaMediumM className="text-2xl text-blue" />}
+                Icon={() => (
+                  <FaMediumM className="text-base lg:text-xl xl:text-2xl text-blue" />
+                )}
               />
               <SocialIcon
                 href="/"
-                Icon={() => <HiMail className="text-2xl text-blue" />}
+                Icon={() => (
+                  <HiMail className="text-base lg:text-xl xl:text-2xl text-blue" />
+                )}
               />
             </div>
           </div>
 
-          <div className="flex items-center justify-between relative">
-            <p className="text-xl text-white font-light">Privacy Policy</p>
-            <p className="text-xl text-white font-light">
-              Copyright © 2022 Lionsgate
-            </p>
-
-            <button className="flex mx-auto text-5xl absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-white rotate-180">
+          <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row items-center justify-between relative">
+            <button className="flex mx-auto text-3xl md:text-4xl lg:text-5xl sm:absolute top-1/2 sm:-translate-y-1/2 left-1/2 sm:-translate-x-1/2 text-white rotate-180">
               <BiChevronDown />
             </button>
+
+            <p className="text-20px text-white font-light">Privacy Policy</p>
+            <p className="text-20px text-white font-light">
+              Copyright © 2022 Lionsgate
+            </p>
           </div>
         </div>
       </div>

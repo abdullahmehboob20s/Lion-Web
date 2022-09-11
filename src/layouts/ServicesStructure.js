@@ -5,19 +5,19 @@ function ServicesStructure() {
   return (
     <div>
       <div className="container">
-        <h1 className="text-center leading-[1.5] text-3xl font-bold mb-20">
+        <h1 className="text-center leading-[1.5] text-base md:text-xl lg:text-2xl xl:text-3xl font-bold mb-12 md:mb-20">
           Together with our global associates and <br /> dedicated legal and
           cyber analysts, we provide <br /> clients with a tailored deal-flow.
         </h1>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 items-start xl:items-stretch gap-6">
           <StructureCard
             headerBg="bg-orange-gradient"
             title="Lionsgate services are suitable for both private and corporate clients who also experienced:"
             points={[
               "Wallet hacking",
               "Funds plunged with Celsius, Luna and others",
-              "Sudden lost access to their wallet  ",
+              "Sudden lost access to their wallet",
             ]}
           />
           <StructureCard

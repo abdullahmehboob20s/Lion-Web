@@ -20,10 +20,39 @@
   }
 
   .rounded-btn {
-    @apply text-white uppercase text-base bg-green-to-blue block font-bold py-2 px-7 rounded-full;
+    @apply text-white uppercase text-xs lg:text-sm xl:text-base bg-green-to-blue block font-bold py-2 px-6 xl:px-7 rounded-full;
   }
 
   .text-shadow-1 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+  /* .text-base {
+    
+  } */
+
+  .text-16px {
+    @apply text-xs lg:text-sm xl:text-base;
+  }
+
+  .text-20px {
+    @apply text-sm lg:text-base xl:text-xl;
+  }
+}
+
+.black-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 110 !important;
+  transition: all 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.black-screen.show {
+  opacity: 1;
+  pointer-events: visible;
 }

@@ -6,16 +6,16 @@ function LostAndRecovered() {
   return (
     <div>
       <div className="container">
-        <div className="mb-50px">
-          <div className="mb-8">
+        <div className="mb-9 md:mb-50px">
+          <div className="mb-4 xl:mb-8">
             <Title title="LOST & RECOVERED" />
           </div>
-          <p className="text-center text-base font-light">
+          <p className="text-center text-sm xl:text-16px font-light">
             Get a free evaluation of your recovery chances by using our wizard
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-6 mb-75px">
+        <div className="grid sm:grid-cols-2 max-w-[14rem] sm:max-w-[26rem] md:max-w-[30rem] mx-auto lg:mx-0 lg:max-w-none lg:grid-cols-4 gap-4 lg:gap-6 mb-50px md:mb-75px">
           <LostAndRecoveredCard
             bg="bg-orange-gradient"
             heading="Total Lost in 2021"
@@ -46,7 +46,7 @@ function LostAndRecovered() {
           <a href="/" className="rounded-btn">
             Use our Wizard
           </a>
-          <a href="/" className="text-base text-black uppercase">
+          <a href="/" className="text-16px text-black uppercase">
             contact
           </a>
         </div>

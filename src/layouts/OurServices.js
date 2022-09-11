@@ -6,22 +6,22 @@ function OurServices() {
   return (
     <div>
       <div className="container">
-        <div className="mb-14">
+        <div className="mb-8 md:mb-14">
           <Title title="OUR SERVICES" className="text-white" />
         </div>
       </div>
 
-      <div className="relative mb-75px">
+      <div className="relative mb-50px md:mb-75px">
         <div className="container">
-          <div className="w-1/2">
-            <p className="text-xl text-white font-light mb-10">
+          <div className="max-w-[22rem] mx-auto md:mx-0 md:max-w-none md:w-1/2">
+            <p className="text-20px text-white font-light mb-6 md:mb-10">
               Our speciality is to hear from our clients all about their
               requirements and needs, to then create a unique roadmap to a
               successful money recovery journey via our a-z portfolio of
               services we create for each of our clients such as:
             </p>
 
-            <div className="space-y-8">
+            <div className="space-y-4 md:space-y-8">
               <Point
                 point="Utilizing our cyber analysts team to discover information where the funds are. We use ethical hacking techniques to mimic the tracing of your funds. (around 30 business days)"
                 textClassName="text-white"
@@ -43,7 +43,7 @@ function OurServices() {
         </div>
         <img
           src="images/our-services.png"
-          className="absolute top-1/2 -translate-y-1/2 right-0 left-[61%] w-[46%]"
+          className="md:absolute top-1/2 md:-translate-y-1/2 right-0 left-[61%] max-w-[22rem] md:max-w-none mx-auto md:mx-0 w-[90%] md:w-[46%] mt-10 md:mt-0"
           alt=""
         />
       </div>
@@ -53,7 +53,7 @@ function OurServices() {
           <a href="/" className="rounded-btn">
             Use our Wizard
           </a>
-          <a href="/" className="text-base text-white uppercase">
+          <a href="/" className="text-16px text-white uppercase">
             contact
           </a>
         </div>
