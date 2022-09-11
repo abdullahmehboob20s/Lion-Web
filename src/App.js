@@ -6,6 +6,7 @@ import GettingStarted from "layouts/GettingStarted";
 import ServicesIncludes from "layouts/ServicesIncludes";
 import ServicesStructure from "layouts/ServicesStructure";
 import OurServices from "layouts/OurServices";
+import RecoverWithUs from "layouts/RecoverWithUs";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
       <div className="bg-blue py-150px">
         <div className="mb-150px">
           <OurServices />
+        </div>
+        <div className="mb-150px">
+          <RecoverWithUs />
         </div>
       </div>
     </div>

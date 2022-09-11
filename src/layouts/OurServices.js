@@ -48,13 +48,15 @@ function OurServices() {
         />
       </div>
 
-      <div className="flex items-center space-x-6 justify-center">
-        <a href="/" className="rounded-btn">
-          Use our Wizard
-        </a>
-        <a href="/" className="text-base text-white uppercase">
-          contact
-        </a>
+      <div className="container">
+        <div className="flex items-center space-x-6 justify-center">
+          <a href="/" className="rounded-btn">
+            Use our Wizard
+          </a>
+          <a href="/" className="text-base text-white uppercase">
+            contact
+          </a>
+        </div>
       </div>
     </div>
   );
