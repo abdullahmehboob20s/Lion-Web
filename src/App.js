@@ -8,6 +8,7 @@ import ServicesStructure from "layouts/ServicesStructure";
 import OurServices from "layouts/OurServices";
 import RecoverWithUs from "layouts/RecoverWithUs";
 import Company from "layouts/Company";
+import DrivenByExperts from "layouts/DrivenByExperts";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <div className="mb-150px">
           <Company />
         </div>
+        <DrivenByExperts />
       </div>
     </div>
   );
