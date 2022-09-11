@@ -14,6 +14,8 @@ module.exports = {
     },
     backgroundImage: {
       "green-to-blue": "linear-gradient(180deg, #5EECC1 0%, #4EACDA 100%)",
+      "orange-gradient": "linear-gradient(180deg, #FF864D 0%, #F06461 100%)",
+      "blue-gradient": "linear-gradient(180deg, #4C72F1 0%, #2E54DD 100%)",
     },
     extend: {
       spacing: {
@@ -26,6 +28,10 @@ module.exports = {
         "175px": "175px",
         "200px": "200px",
         "225px": "225px",
+      },
+      borderRadius: {
+        "25px": "25px",
+        "30px": "30px",
       },
     },
   },
