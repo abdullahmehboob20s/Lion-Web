@@ -7,6 +7,7 @@ import ServicesIncludes from "layouts/ServicesIncludes";
 import ServicesStructure from "layouts/ServicesStructure";
 import OurServices from "layouts/OurServices";
 import RecoverWithUs from "layouts/RecoverWithUs";
+import Company from "layouts/Company";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
         </div>
         <div className="mb-150px">
           <RecoverWithUs />
+        </div>
+        <div className="mb-150px">
+          <Company />
         </div>
       </div>
     </div>
