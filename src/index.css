@@ -10,7 +10,7 @@
   }
 
   html {
-    @apply bg-light-blue;
+    @apply bg-light-blue overflow-x-hidden;
   }
 }
 

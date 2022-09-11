@@ -5,6 +5,7 @@ import LostAndRecovered from "layouts/LostAndRecovered";
 import GettingStarted from "layouts/GettingStarted";
 import ServicesIncludes from "layouts/ServicesIncludes";
 import ServicesStructure from "layouts/ServicesStructure";
+import OurServices from "layouts/OurServices";
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
       </div>
       <div className="mb-100px">
         <ServicesStructure />
+      </div>
+      <div className="bg-blue py-150px">
+        <div className="mb-150px">
+          <OurServices />
+        </div>
       </div>
     </div>
   );
