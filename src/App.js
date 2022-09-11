@@ -37,7 +37,10 @@ function App() {
       <div className="mb-50px md:mb-75px lg:mb-100px xl:mb-150px">
         <div className="bg-blue">
           <img src="images/curved-down.svg" alt="" />
-          <div className="py-50px md:py-100px xl:py-150px pb-0 z-20 relative">
+          <div
+            className="py-50px md:py-100px xl:py-125px z-20 relative"
+            style={{ paddingBottom: 0 }}
+          >
             <div className="mb-75px sm:mb-100px lg:mb-150px">
               <OurServices />
             </div>
