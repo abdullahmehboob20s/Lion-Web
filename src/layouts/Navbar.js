@@ -19,10 +19,7 @@ function Navbar() {
             <a href="/" className="text-white uppercase text-base">
               Company
             </a>
-            <a
-              href="/"
-              className="text-white uppercase text-base bg-green-to-blue block font-bold py-2 px-7 rounded-full"
-            >
+            <a href="/" className="rounded-btn">
               Use our Wizard
             </a>
           </div>
