@@ -43,7 +43,7 @@ function OurServices() {
         </div>
         <img
           src="images/our-services.png"
-          className="md:absolute top-1/2 md:-translate-y-1/2 right-0 left-[61%] max-w-[22rem] md:max-w-none mx-auto md:mx-0 w-[90%] md:w-[46%] mt-10 md:mt-0"
+          className="md:absolute top-1/2 md:-translate-y-1/2 right-0 left-[61%] max-w-[22rem] md:max-w-none mx-auto md:mx-0 w-[90%] md:w-[44%] mt-10 md:mt-0"
           alt=""
         />
       </div>

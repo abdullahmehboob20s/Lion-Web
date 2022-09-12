@@ -6,11 +6,11 @@
 
 @layer base {
   * {
-    @apply font-Roboto;
+    @apply font-Roboto scroll-smooth;
   }
 
   html {
-    @apply bg-light-blue overflow-x-hidden;
+    @apply bg-light-blue overflow-x-hidden scroll-smooth;
   }
 }
 

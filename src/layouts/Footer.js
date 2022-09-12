@@ -5,6 +5,7 @@ import Form from "./Form";
 import { FaFacebook, FaTwitter, FaLinkedinIn, FaMediumM } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { BiChevronDown } from "react-icons/bi";
+import Scroll from "react-scroll";
 
 function Footer() {
   return (
@@ -58,7 +59,10 @@ function Footer() {
           </div>
 
           <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row items-center justify-between relative">
-            <button className="flex mx-auto text-3xl md:text-4xl lg:text-5xl sm:absolute top-1/2 sm:-translate-y-1/2 left-1/2 sm:-translate-x-1/2 text-white rotate-180">
+            <button
+              className="flex mx-auto text-3xl md:text-4xl lg:text-5xl sm:absolute top-1/2 sm:-translate-y-1/2 left-1/2 sm:-translate-x-1/2 text-white rotate-180"
+              onClick={() => Scroll.scroller.scrollTo("home")}
+            >
               <BiChevronDown />
             </button>
 

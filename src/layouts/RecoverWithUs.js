@@ -28,7 +28,7 @@ function RecoverWithUs() {
         <div className="flex-1 max-w-[22rem] md:max-w-none md:w-full w-full lg:w-1/2 flex justify-end lg:justify-center items-center">
           <img
             src="images/recover-with-us.png"
-            className="w-full lg:w-[70%]"
+            className="w-full lg:w-[68%]"
             alt=""
           />
         </div>

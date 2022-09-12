@@ -25,7 +25,7 @@ function Company() {
         <div className="md:w-1/2 flex justify-center items-center">
           <img
             src="images/company.png"
-            className="max-w-[28rem] md:max-w-none w-[100%]"
+            className="max-w-[28rem] md:max-w-none w-[96%]"
             alt=""
           />
         </div>

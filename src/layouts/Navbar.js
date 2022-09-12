@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 import OutsideClickDetector from "hooks/OutsideClickDetector";
+import { Link as ScrollLink } from "react-scroll";
 
 function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -39,17 +40,32 @@ function Navbar() {
           </button>
 
           <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-8">
-            <a href="/" className="text-white uppercase text-16px">
+            <ScrollLink
+              to="Company"
+              offset={-100}
+              onClick={() => setIsSidebarOpen(false)}
+              className="text-white uppercase text-16px cursor-pointer"
+            >
               Company
-            </a>
-            <a href="/" className="text-white uppercase text-16px">
+            </ScrollLink>
+            <ScrollLink
+              to="Services"
+              offset={-100}
+              onClick={() => setIsSidebarOpen(false)}
+              className="text-white uppercase text-16px cursor-pointer"
+            >
               Services
-            </a>
+            </ScrollLink>
           </div>
           <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-9">
-            <a href="/" className="text-white uppercase text-16px">
+            <ScrollLink
+              to="Contact"
+              offset={-100}
+              onClick={() => setIsSidebarOpen(false)}
+              className="text-white uppercase text-16px cursor-pointer"
+            >
               Contact
-            </a>
+            </ScrollLink>
             <a href="/" className="rounded-btn text-center md:text-left">
               Use our Wizard
             </a>

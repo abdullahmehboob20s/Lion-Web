@@ -13,12 +13,12 @@ import Footer from "layouts/Footer";
 
 function App() {
   return (
-    <div>
+    <div id="home">
       <div className="bg-blue mb-50px sm:mb-75px lg:mb-100px">
         <Navbar />
         <Hero />
       </div>
-      <div className="mb-75px sm:mb-100px lg:mb-150px">
+      <div className="mb-75px sm:mb-100px lg:mb-150px" id="trusted">
         <TrustedCompanies />
       </div>
       <div className="mb-75px lg:mb-100px">
@@ -36,18 +36,18 @@ function App() {
 
       <div className="mb-50px md:mb-75px lg:mb-100px xl:mb-150px">
         <div className="bg-blue">
-          <img src="images/curved-down.svg" alt="" />
+          <img src="images/curved-down.svg" className="w-full" alt="" />
           <div
             className="py-50px md:py-100px xl:py-125px z-20 relative"
             style={{ paddingBottom: 0 }}
           >
-            <div className="mb-75px sm:mb-100px lg:mb-150px">
+            <div className="mb-75px sm:mb-100px lg:mb-150px" id="Services">
               <OurServices />
             </div>
             <div className="mb-75px sm:mb-100px lg:mb-150px">
               <RecoverWithUs />
             </div>
-            <div className="mb-75px sm:mb-100px lg:mb-150px">
+            <div className="mb-75px sm:mb-100px lg:mb-150px" id="Company">
               <Company />
             </div>
             <DrivenByExperts />
@@ -69,7 +69,9 @@ function App() {
         </div>
       </div>
 
-      <Footer />
+      <div id="Contact">
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
+import Scroll from "react-scroll";
 
 function Hero() {
   return (
@@ -25,7 +26,12 @@ function Hero() {
 
           <img src="images/laptop.png" className="w-full mb-25px" alt="" />
 
-          <button className="flex mx-auto text-3xl md:text-4xl xl:text-5xl">
+          <button
+            className="flex mx-auto text-3xl md:text-4xl xl:text-5xl"
+            onClick={() =>
+              Scroll.scroller.scrollTo("trusted", { offset: -100 })
+            }
+          >
             <BiChevronDown />
           </button>
         </div>

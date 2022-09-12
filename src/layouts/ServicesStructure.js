@@ -22,7 +22,12 @@ function ServicesStructure() {
           />
           <StructureCard
             headerBg="bg-blue-gradient"
-            title="More benefits our clients find with Lionsgate are:"
+            title={
+              <span>
+                More benefits our clients find with{" "}
+                <br className="hidden lg:block" /> Lionsgate are:
+              </span>
+            }
             points={[
               "Navigating the rabbit hole to locate your funds anywhere ",
               "A speedy process to recovery - Premium Express ",
