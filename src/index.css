@@ -38,6 +38,12 @@
   .text-20px {
     @apply text-sm lg:text-base xl:text-xl;
   }
+
+  /* FORM */
+
+  .form-input {
+    @apply w-full h-8 lg:h-10 xl:h-12 rounded-full bg-white px-6 outline-none text-xs lg:text-sm;
+  }
 }
 
 .black-screen {
@@ -55,4 +61,11 @@
 .black-screen.show {
   opacity: 1;
   pointer-events: visible;
+}
+
+.hide-icon {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
 }
