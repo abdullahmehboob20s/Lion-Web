@@ -43,6 +43,12 @@ function Navbar({ className }) {
           </button>
 
           <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-8">
+            <Link
+              to="/about"
+              className="text-white uppercase text-16px cursor-pointer"
+            >
+              About
+            </Link>
             <ScrollLink
               to="Company"
               offset={-100}
@@ -59,6 +65,12 @@ function Navbar({ className }) {
             >
               Services
             </ScrollLink>
+            <Link
+              to="/jobs"
+              className="text-white uppercase text-16px cursor-pointer"
+            >
+              Jobs
+            </Link>
           </div>
           <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-9">
             <ScrollLink
