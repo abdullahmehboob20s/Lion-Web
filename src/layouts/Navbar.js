@@ -69,9 +69,14 @@ function Navbar({ className }) {
             >
               Contact
             </ScrollLink>
-            <a href="/" className="rounded-btn text-center md:text-left">
+            <button
+              data-tf-popup="e8zavgJB"
+              data-tf-iframe-props="title=Lionsgate Wizard"
+              data-tf-medium="snippet"
+              className="rounded-btn text-center md:text-left"
+            >
               Use our Wizard
-            </a>
+            </button>
           </div>
         </div>
       </div>
