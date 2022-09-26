@@ -3,19 +3,22 @@ import { IoClose } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 import OutsideClickDetector from "hooks/OutsideClickDetector";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ className }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const sidebarRef = OutsideClickDetector(() => setIsSidebarOpen(false));
 
   return (
-    <div>
+    <div className={className}>
       <div className="container py-5 xl:py-6 flex items-center justify-between">
-        <img
-          src="images/logo.png"
-          className="w-32 md:w-36 lg:w-40 xl:w-52"
-          alt=""
-        />
+        <Link to="/">
+          <img
+            src="images/logo.png"
+            className="w-32 md:w-36 lg:w-40 xl:w-52"
+            alt=""
+          />
+        </Link>
 
         <button
           className="flex md:hidden text-xl text-white"
