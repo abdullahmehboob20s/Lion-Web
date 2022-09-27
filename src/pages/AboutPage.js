@@ -4,8 +4,8 @@ function AboutPage() {
   return (
     <div className="relative">
       <Navbar className="bg-blue" />
-      <div>
-        <div className="container py-8 sm:py-12 pb-20">
+      <div className="mb-16 sm:mb-20 xl:mb-150px">
+        <div className="container pt-8 sm:pt-12">
           <h1 className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 lg:mb-16">
             ABOUT
           </h1>
@@ -54,13 +54,28 @@ function AboutPage() {
             </p>
           </div>
         </div>
-
-        <img
-          src="images/blue-circle.svg"
-          className="absolute top-0 -right-40% w-80% h-full -z-50 hidden lg:block"
-          alt=""
-        />
       </div>
+
+      <div className="mb-100px">
+        <div className="container flex flex-col sm:flex-row space-y-4 sm:space-y-0 items-center justify-between">
+          <a
+            href="#"
+            className="text-base lg:text-lg xl:text-xl font-light text-black"
+          >
+            Privacy Policy{" "}
+          </a>
+
+          <p className="text-base lg:text-lg xl:text-xl font-light text-black">
+            Copyright © 2022 Lionsgate
+          </p>
+        </div>
+      </div>
+
+      <img
+        src="images/about-banner.png"
+        className="absolute top-0 right-[0] w-[46%] max-w-[700px] -z-50 hidden lg:block"
+        alt=""
+      />
     </div>
   );
 }
