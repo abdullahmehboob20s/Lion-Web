@@ -1,3 +1,4 @@
+import { PopupButton } from "@typeform/embed-react";
 import LostAndRecoveredCard from "components/LostAndRecoveredCard";
 import Title from "components/Title";
 import React from "react";
@@ -43,9 +44,17 @@ function LostAndRecovered() {
         </div>
 
         <div className="flex items-center space-x-6 justify-center">
-          <a href="/" className="rounded-btn">
+          {/* <a href="/" className="rounded-btn">
             Use our Wizard
-          </a>
+          </a> */}
+          <PopupButton
+            id="e8zavgJB"
+            data-tf-iframe-props="title=Lionsgate Wizard"
+            data-tf-medium="snippet"
+            className="rounded-btn"
+          >
+            Use our Wizard
+          </PopupButton>
           <a href="/" className="text-16px text-black uppercase">
             contact
           </a>

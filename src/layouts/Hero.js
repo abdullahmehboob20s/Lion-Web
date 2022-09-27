@@ -1,3 +1,4 @@
+import { PopupButton } from "@typeform/embed-react";
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
 import Scroll from "react-scroll";
@@ -19,9 +20,17 @@ function Hero() {
               Get a free evaluation of your recovery chances by using our wizard
             </p>
 
-            <a href="/" className="rounded-btn w-fit mx-auto">
+            {/* <a href="/" className="rounded-btn w-fit mx-auto">
               Use our Wizard
-            </a>
+            </a> */}
+            <PopupButton
+              id="e8zavgJB"
+              data-tf-iframe-props="title=Lionsgate Wizard"
+              data-tf-medium="snippet"
+              className="rounded-btn text-center mx-auto"
+            >
+              Use our Wizard
+            </PopupButton>
           </div>
 
           <img src="images/laptop.png" className="w-full mb-25px" alt="" />
