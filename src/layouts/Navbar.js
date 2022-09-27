@@ -4,6 +4,7 @@ import { FiMenu } from "react-icons/fi";
 import OutsideClickDetector from "hooks/OutsideClickDetector";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
+import { PopupButton } from "@typeform/embed-react";
 
 function Navbar({ className }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -81,14 +82,22 @@ function Navbar({ className }) {
             >
               Contact
             </ScrollLink>
-            <button
-              data-tf-popup="e8zavgJB"
+            {/* <button
+              data-tf-popup=""
               data-tf-iframe-props="title=Lionsgate Wizard"
               data-tf-medium="snippet"
               className="rounded-btn text-center md:text-left"
             >
               Use our Wizard
-            </button>
+            </button> */}
+            <PopupButton
+              id="e8zavgJB"
+              data-tf-iframe-props="title=Lionsgate Wizard"
+              data-tf-medium="snippet"
+              className="rounded-btn text-center min-w-[12rem]"
+            >
+              Use our Wizard
+            </PopupButton>
           </div>
         </div>
       </div>
