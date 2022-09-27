@@ -1,4 +1,4 @@
-import Footer2 from "layouts/Footer2";
+import FooterFooter from "layouts/FooterFooter";
 import Navbar from "layouts/Navbar";
 
 function AboutPage() {
@@ -58,7 +58,9 @@ function AboutPage() {
       </div>
 
       <div className="mb-100px">
-        <Footer2 />
+        <div className="container">
+          <FooterFooter textColor="text-black" />
+        </div>
       </div>
 
       <img

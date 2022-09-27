@@ -1,5 +1,5 @@
 import JobForm from "components/JobForm";
-import Footer2 from "layouts/Footer2";
+import FooterFooter from "layouts/FooterFooter";
 import Navbar from "layouts/Navbar";
 import React from "react";
 
@@ -59,7 +59,9 @@ function Jobs() {
           </div>
         </div>
 
-        <Footer2 textColor="text-white" />
+        <div className="container">
+          <FooterFooter />
+        </div>
       </div>
     </div>
   );
