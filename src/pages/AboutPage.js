@@ -1,3 +1,4 @@
+import Footer2 from "layouts/Footer2";
 import Navbar from "layouts/Navbar";
 
 function AboutPage() {
@@ -57,18 +58,7 @@ function AboutPage() {
       </div>
 
       <div className="mb-100px">
-        <div className="container flex flex-col sm:flex-row space-y-4 sm:space-y-0 items-center justify-between">
-          <a
-            href="#"
-            className="text-base lg:text-lg xl:text-xl font-light text-black"
-          >
-            Privacy Policy{" "}
-          </a>
-
-          <p className="text-base lg:text-lg xl:text-xl font-light text-black">
-            Copyright © 2022 Lionsgate
-          </p>
-        </div>
+        <Footer2 />
       </div>
 
       <img
