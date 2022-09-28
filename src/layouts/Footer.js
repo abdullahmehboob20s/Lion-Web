@@ -2,10 +2,18 @@ import SocialIcon from "components/SocialIcon";
 import Title from "components/Title";
 import React from "react";
 import Form from "./Form";
-import { FaFacebook, FaTwitter, FaLinkedinIn, FaMediumM } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedinIn,
+  FaMediumM,
+  FaTelegramPlane,
+  FaReddit,
+} from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { BiChevronDown } from "react-icons/bi";
 import Scroll from "react-scroll";
+import { GrReddit } from "react-icons/gr";
 
 function Footer() {
   return (
@@ -28,31 +36,50 @@ function Footer() {
 
             <div className="flex items-center space-x-4 lg:space-x-6 xl:space-x-10 justify-center">
               <SocialIcon
-                href="/"
+                href="https://www.facebook.com/LionsGateWizard/"
+                target="_blank"
                 Icon={() => (
                   <FaFacebook className="text-base lg:text-xl xl:text-2xl text-blue" />
                 )}
               />
               <SocialIcon
-                href="/"
+                href="https://twitter.com/_Lionsgate"
+                target="_blank"
                 Icon={() => <FaTwitter className="text-20px text-blue" />}
               />
               <SocialIcon
-                href="/"
+                href="https://www.linkedin.com/company/lions-gate/?viewAsMember=true"
+                target="_blank"
                 Icon={() => (
                   <FaLinkedinIn className="text-base lg:text-xl xl:text-2xl text-blue" />
                 )}
               />
-              <SocialIcon
+              {/* <SocialIcon
                 href="/"
+                target="_blank"
                 Icon={() => (
                   <FaMediumM className="text-base lg:text-xl xl:text-2xl text-blue" />
                 )}
-              />
+              /> */}
               <SocialIcon
+                href="https://t.me/+h-NhDmCil8AwM2Ux"
+                target="_blank"
+                Icon={() => (
+                  <FaTelegramPlane className="text-base lg:text-xl xl:text-2xl text-blue" />
+                )}
+              />
+              {/* <SocialIcon
                 href="/"
+                target="_blank"
                 Icon={() => (
                   <HiMail className="text-base lg:text-xl xl:text-2xl text-blue" />
+                )}
+              /> */}
+              <SocialIcon
+                href="https://www.reddit.com/user/_Lionsgate_/"
+                target="_blank"
+                Icon={() => (
+                  <GrReddit className="text-base lg:text-xl xl:text-2xl text-blue" />
                 )}
               />
             </div>
