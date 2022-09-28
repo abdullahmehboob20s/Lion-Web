@@ -1,4 +1,5 @@
 import JobForm from "components/JobForm";
+import FooterFooter from "layouts/FooterFooter";
 import Navbar from "layouts/Navbar";
 import React from "react";
 
@@ -50,10 +51,16 @@ function Jobs() {
         alt=""
       />
       <div className="mt-25px md:pt-0 pb-50px md:py-20 bg-blue relative">
-        <div className="container">
-          <div className="w-full max-w-[280px] lg:max-w-[345px] mx-auto">
-            <JobForm />
+        <div className="mb-16">
+          <div className="container">
+            <div className="w-full max-w-[280px] lg:max-w-[345px] mx-auto">
+              <JobForm />
+            </div>
           </div>
+        </div>
+
+        <div className="container">
+          <FooterFooter />
         </div>
       </div>
     </div>
