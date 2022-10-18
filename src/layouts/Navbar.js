@@ -16,7 +16,7 @@ function Navbar({ className }) {
         <Link to="/">
           <img
             src="images/logo.png"
-            className="w-32 md:w-36 lg:w-40 xl:w-52"
+            className="w-32 md:w-36 lg:w-40 xl:w-52 min-w-[128px] md:min-w-[144px] lg:min-w-[160px] xl:min-w-[208px]"
             alt=""
           />
         </Link>
@@ -30,7 +30,7 @@ function Navbar({ className }) {
 
         <div
           ref={sidebarRef}
-          className={`w-[300px] p-10 md:p-0 md:w-auto flex flex-col md:flex-row md:items-center md:space-x-50px lg:space-x-[150px] fixed md:static top-0 right-0 bg-blue md:bg-transparent h-screen md:h-auto z-[140] space-y-6 md:space-y-0 transition-all duration-[.3s]  ${
+          className={`w-[300px] p-10 md:p-0 md:w-auto flex flex-col md:flex-row md:items-center md:space-x-50px lg:space-x-[100px] fixed md:static top-0 right-0 bg-blue md:bg-transparent h-screen md:h-auto z-[140] space-y-6 md:space-y-0 transition-all duration-[.3s]  ${
             isSidebarOpen
               ? "translate-x-[0px]"
               : "translate-x-[300px] md:translate-x-0"
@@ -94,7 +94,8 @@ function Navbar({ className }) {
               id="e8zavgJB"
               data-tf-iframe-props="title=Lionsgate Wizard"
               data-tf-medium="snippet"
-              className="rounded-btn text-center min-w-[12rem]"
+              className="rounded-btn text-center"
+              style={{ whiteSpace: "nowrap" }}
             >
               Use our Wizard
             </PopupButton>

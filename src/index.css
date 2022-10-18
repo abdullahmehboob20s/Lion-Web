@@ -31,12 +31,20 @@
     
   } */
 
+  .text-48px {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+  }
+
   .text-16px {
     @apply text-xs lg:text-sm xl:text-base;
   }
 
   .text-20px {
     @apply text-sm lg:text-base xl:text-xl;
+  }
+
+  .text-24px {
+    @apply text-base md:text-lg lg:text-xl xl:text-2xl;
   }
 
   /* FORM */

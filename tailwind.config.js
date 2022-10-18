@@ -18,6 +18,9 @@ module.exports = {
       "blue-gradient": "linear-gradient(180deg, #4C72F1 0%, #2E54DD 100%)",
     },
     extend: {
+      fontSize: {
+        "45px": "45px",
+      },
       lineHeight: {
         1: "1",
         "1_1": 1.1,

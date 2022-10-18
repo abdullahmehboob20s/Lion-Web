@@ -1,3 +1,4 @@
+import Select from "components/Select";
 import React from "react";
 
 function Form() {
@@ -10,6 +11,10 @@ function Form() {
           type="number"
           className="form-input"
           placeholder="Mobile Phone Number"
+        />
+        <Select
+          placeholder="Which scenario best describes your case?"
+          options={[{ title: "awewe" }]}
         />
       </div>
 
