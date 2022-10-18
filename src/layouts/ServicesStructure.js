@@ -5,9 +5,12 @@ function ServicesStructure() {
   return (
     <div>
       <div className="container">
-        <h1 className="text-center leading-[1.5] text-base md:text-xl lg:text-2xl xl:text-3xl font-bold mb-12 md:mb-20">
-          Together with our global associates and <br /> dedicated legal and
-          cyber analysts, we provide <br /> clients with a tailored deal-flow.
+        <h1
+          className="text-center text-base md:text-xl uppercase lg:text-2xl xl:text-3xl font-bold mb-12 md:mb-20"
+          style={{ lineHeight: 1.5 }}
+        >
+          A company-wide integration of blockchain analysts and <br /> legal
+          personnel is the key to Lionsgate's success
         </h1>
 
         <div className="grid md:grid-cols-2 items-start xl:items-stretch gap-6">

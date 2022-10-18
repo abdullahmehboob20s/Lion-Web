@@ -102,7 +102,7 @@ function MobileNavbar({ isSidebarOpen, setIsSidebarOpen }) {
               className="rounded-btn text-center"
               style={{ whiteSpace: "nowrap" }}
             >
-              Use our Wizard
+              try our Wizard
             </PopupButton>
           </div>
         </div>

@@ -1,9 +1,10 @@
 import React from "react";
 
-function Title({ title, className }) {
+function Title({ title, className, alignment = "center" }) {
   return (
     <h1
-      className={`text-center font-bold text-xl sm:text-2xl lg:text-3xl xl:text-5xl uppercase ${className}`}
+      className={`font-bold text-xl sm:text-2xl lg:text-3xl xl:text-5xl uppercase ${className}`}
+      style={{ textAlign: alignment }}
     >
       {title}
     </h1>

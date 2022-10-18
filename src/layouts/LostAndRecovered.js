@@ -53,11 +53,11 @@ function LostAndRecovered() {
             data-tf-medium="snippet"
             className="rounded-btn"
           >
-            Use our Wizard
+            try our Wizard
           </PopupButton>
-          <a href="/" className="text-16px text-black uppercase">
+          {/* <a href="/" className="text-16px text-black uppercase">
             contact
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
