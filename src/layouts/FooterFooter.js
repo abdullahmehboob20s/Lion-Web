@@ -1,5 +1,6 @@
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import Scroll from "react-scroll";
 
 function FooterFooter({ textColor = "text-white", arrowUpShow = false }) {
@@ -16,8 +17,12 @@ function FooterFooter({ textColor = "text-white", arrowUpShow = false }) {
         </button>
       ) : null}
 
-      <p className="text-20px font-light">Privacy Policy</p>
-      <p className="text-20px font-light">Copyright © 2022 Lionsgate</p>
+      <Link to="/privacy-policy" className="text-20px font-light">
+        Privacy Policy
+      </Link>
+      <Link to="/terms-and-conditions" className="text-20px font-light">
+        Copyright © 2022 Lionsgate
+      </Link>
     </div>
   );
 }

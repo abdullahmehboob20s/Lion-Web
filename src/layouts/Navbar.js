@@ -74,14 +74,14 @@ function Navbar({ className }) {
             </Link>
           </div>
           <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-9">
-            <ScrollLink
-              to="Contact"
+            <Link
+              to="/contact"
               offset={-100}
               onClick={() => setIsSidebarOpen(false)}
               className="text-white uppercase text-16px cursor-pointer"
             >
               Contact
-            </ScrollLink>
+            </Link>
             {/* <button
               data-tf-popup=""
               data-tf-iframe-props="title=Lionsgate Wizard"
