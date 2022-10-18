@@ -1,7 +1,10 @@
+import useMediaQuery from "hooks/useMediaQuery";
 import FooterFooter from "layouts/FooterFooter";
 import Navbar from "layouts/Navbar";
 
 function AboutPage() {
+  const isAbove1024px = useMediaQuery("(min-width:1024px)");
+
   return (
     <div className="relative">
       <Navbar className="bg-blue" />
@@ -11,7 +14,7 @@ function AboutPage() {
             ABOUT
           </h1>
 
-          <div className="lg:w-50% text-center lg:text-left">
+          <div className="lg:w-50% text-left">
             <h2 className="text-lg lg:text-xl xl:text-2xl text-black font-bold mb-5 lg:mb-9">
               We're Lionsgate.
             </h2>
@@ -57,17 +60,44 @@ function AboutPage() {
         </div>
       </div>
 
-      <div className="mb-100px">
-        <div className="container">
-          <FooterFooter textColor="text-black" />
-        </div>
-      </div>
+      {isAbove1024px ? (
+        <>
+          <img
+            src="images/about-banner.png"
+            className="absolute top-0 right-[0] w-[46%] max-w-[700px] -z-50 hidden lg:block"
+            alt=""
+          />
 
-      <img
-        src="images/about-banner.png"
-        className="absolute top-0 right-[0] w-[46%] max-w-[700px] -z-50 hidden lg:block"
-        alt=""
-      />
+          <div className="mb-100px">
+            <div className="container">
+              <FooterFooter textColor="text-black" />
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <img
+            src="images/curved-blue.svg"
+            className="-z-50 w-full mb-[-13%]"
+            alt=""
+          />
+          <div className="mt-25px md:pt-0 pb-50px md:py-20 bg-blue relative">
+            <div className="mb-6">
+              <div className="container">
+                <img
+                  src="images/mobile-about.png"
+                  className="w-full max-w-[18rem] mx-auto"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div className="container">
+              <FooterFooter />
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
